@@ -1,0 +1,32 @@
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+  pull-requests: write
+
+name: release-please
+
+jobs:
+  create-release-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: google-github-actions/release-please-action@v3
+        id: release
+        with:
+          release-type: node
+          command: manifest
+
+      - name: delete non-root releases
+        if: ${{ steps.release.outputs.releases_created == 'true' }}
+        env:
+          RELEASE_OUTPUT: ${{ toJson(steps.release.outputs) }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tags=$(echo $RELEASE_OUTPUT | jq -r 'to_entries | map(select( .key | endswith("--tag_name"))  | .value) | .[]')
+          for tag in $tags; do
+            echo "deleting release with tag $tag"
+            gh release -R $GITHUB_REPOSITORY delete -y $tag
+          done

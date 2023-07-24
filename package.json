@@ -1,0 +1,21 @@
+{
+  "name": "release-please-demo",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=8"
+  },
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.7",
+    "@commitlint/config-conventional": "^17.6.7",
+    "release-please": "^15.12.0"
+  }
+}
