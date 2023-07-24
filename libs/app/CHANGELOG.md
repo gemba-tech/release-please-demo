@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.4](https://github.com/gemba-tech/release-please-demo/compare/app-v0.0.3...app-v0.0.4) (2023-07-24)
+
+
+### Bug Fixes
+
+* **libs:app:** b2 ([a981bca](https://github.com/gemba-tech/release-please-demo/commit/a981bca0e48cabc97f54042e453bec5fdf0dd848))
+
 ## [0.0.3](https://github.com/gemba-tech/release-please-demo/compare/app-v0.0.2...app-v0.0.3) (2023-07-24)
 
 
