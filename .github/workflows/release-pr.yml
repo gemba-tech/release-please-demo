@@ -14,6 +14,9 @@ jobs:
     if: ${{ (!contains(github.event.head_commit.message, '#skip-ci') && github.event.pull_request.merged)}}
     runs-on: ubuntu-latest
     steps:
+      - name: Greetings
+        run: "Starting github action"
+
       - uses: google-github-actions/release-please-action@v3
         id: release
         with:
