@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.0.6](https://github.com/gemba-tech/release-please-demo/compare/release-please-demo-v0.0.5...release-please-demo-v0.0.6) (2023-10-09)
+
+
+### Features
+
+* **apps:web:** f5 ([#5](https://github.com/gemba-tech/release-please-demo/issues/5)) ([4559d59](https://github.com/gemba-tech/release-please-demo/commit/4559d599e082f6d87d2d32582be905ba9f89c10f))
+
+
+### Bug Fixes
+
+* greeting step ([#9](https://github.com/gemba-tech/release-please-demo/issues/9)) ([768e545](https://github.com/gemba-tech/release-please-demo/commit/768e5455bba16011ab2380c865c07dfa418697a7))
+
 ## [0.0.5](https://github.com/gemba-tech/release-please-demo/compare/release-please-demo-v0.0.4...release-please-demo-v0.0.5) (2023-07-24)
 
 
