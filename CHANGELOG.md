@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.9](https://github.com/gemba-tech/release-please-demo/compare/release-please-demo-v0.0.8...release-please-demo-v0.0.9) (2023-10-09)
+
+
+### Bug Fixes
+
+* release please status check ([#23](https://github.com/gemba-tech/release-please-demo/issues/23)) ([0b2ba26](https://github.com/gemba-tech/release-please-demo/commit/0b2ba2669161f58240f64575afc1eb7cab5d3da6))
+* release please status check ([#25](https://github.com/gemba-tech/release-please-demo/issues/25)) ([01ffdb3](https://github.com/gemba-tech/release-please-demo/commit/01ffdb343fae55c9647ae81a6333ff23a4d2bd1f))
+
 ## [0.0.8](https://github.com/gemba-tech/release-please-demo/compare/release-please-demo-v0.0.7...release-please-demo-v0.0.8) (2023-10-09)
 
 
