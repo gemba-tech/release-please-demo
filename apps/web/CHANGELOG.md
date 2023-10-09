@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.7](https://github.com/gemba-tech/release-please-demo/compare/web-v0.0.6...web-v0.0.7) (2023-10-09)
+
+
+### Bug Fixes
+
+* release please status check ([#23](https://github.com/gemba-tech/release-please-demo/issues/23)) ([0b2ba26](https://github.com/gemba-tech/release-please-demo/commit/0b2ba2669161f58240f64575afc1eb7cab5d3da6))
+
 ## [0.0.6](https://github.com/gemba-tech/release-please-demo/compare/web-v0.0.5...web-v0.0.6) (2023-10-09)
 
 
