@@ -10,15 +10,16 @@ on:
     branches:
       - main
   push:
-    branches: [main]
+    branches:
+      - main
 
 jobs:
   ci:
-    if: ${{ ! startsWith(github.head_ref, 'release-please') || github.event.type != 'push' }}
+    if: ${{ github.event.type != 'push' }}
     runs-on: ubuntu-latest
     steps:
       - name: Greetings
-        run: echo "Starting github action...."
+        run: echo "Starting github action.... ${{ github.event.type }}"
 
       - name: Setup env variables
         run: env
