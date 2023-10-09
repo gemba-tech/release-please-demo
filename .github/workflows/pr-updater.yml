@@ -1,4 +1,4 @@
-name: PR update
+name: Auto update PR
 
 on:
   push:
@@ -7,10 +7,9 @@ on:
 
 jobs:
   autoupdate:
+    name: update out of sync PRs
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - name: update all prs
-        uses: maxkomarychev/pr-updater-action@v1.0.0
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: docker://chinthakagodawita/autoupdate-action:v1
+        env:
+          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
