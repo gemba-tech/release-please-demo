@@ -9,13 +9,9 @@ on:
       - synchronize
     branches:
       - main
-  push:
-    branches:
-      - main
 
 jobs:
   ci:
-    if: ${{ github.event.type != 'push' }}
     runs-on: ubuntu-latest
     steps:
       - name: Greetings
