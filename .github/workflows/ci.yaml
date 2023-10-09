@@ -3,23 +3,14 @@ name: CI
 
 on:
   workflow_dispatch:
-  pull_request:
-    types:
-      - opened
-      - synchronize
-    branches:
-      - main
-
-  push:
-    branches:
-      - main
 
 jobs:
   ci:
-    if: ${{ !contains(github.event.head_commit.message, '#skip-ci') }}
     runs-on: ubuntu-latest
     steps:
+      - name: Greetings
+        run: "Starting github action...."
+
       - name: Setup env variables
-        run: |
-          env
+        run: env
 
