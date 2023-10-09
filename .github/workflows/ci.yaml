@@ -3,6 +3,12 @@ name: CI
 
 on:
   workflow_dispatch:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+    branches:
+      - main
 
 jobs:
   ci:
