@@ -1,1 +1,1 @@
-console.log("apps/F1")
+console.log("apps/F2")
