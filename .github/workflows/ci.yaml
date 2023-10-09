@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Greetings
-        run: "Starting github action...."
+        run: echo "Starting github action...."
 
       - name: Setup env variables
         run: env
