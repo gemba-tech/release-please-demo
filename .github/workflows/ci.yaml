@@ -9,11 +9,13 @@ on:
       - synchronize
     branches:
       - main
+  push:
+    branches: [main]
 
 jobs:
   ci:
+    if: ${{ ! startsWith(github.head_ref, 'release-please') || github.event.type != 'push' }}
     runs-on: ubuntu-latest
-    if: ${{ !startsWith(github.head_ref, 'release-please') }}
     steps:
       - name: Greetings
         run: echo "Starting github action...."
