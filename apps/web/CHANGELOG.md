@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.5](https://github.com/gemba-tech/release-please-demo/compare/web-v0.0.4...web-v0.0.5) (2023-10-09)
+
+
+### Features
+
+* **apps: web:** f1 ([#12](https://github.com/gemba-tech/release-please-demo/issues/12)) ([4e200f1](https://github.com/gemba-tech/release-please-demo/commit/4e200f1558198d6804c59abac0400bd8dac6aace))
+
 ## [0.0.4](https://github.com/gemba-tech/release-please-demo/compare/web-v0.0.3...web-v0.0.4) (2023-10-09)
 
 
